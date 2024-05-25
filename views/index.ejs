@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CipherSys</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!--<div id="daniedCont">
+    <div class="danied daniedOpen">
+      <p id="closeAlert">X</p>
+        <h1>ACESSO NEGADO</h1>
+    </div>
+  </div>--><%-danied%>
+  
+    <main>
+        <div id="painel"></div>
+        <div id="formCont">
+          
+            <h1>LOGIN</h1>
+            <div id="contPut">
+              <form action="/painel" method="post">
+                <input type="text" name="user" placeholder="NOME OU EMAIL"><br>
+                <input type="password" name="pass" placeholder="SENHA"><br>
+                <button id="acess">ACESSAR</button>
+              </form>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+      let closeAlert = document.getElementById('closeAlert')
+      let daniedCont = document.getElementById('daniedCont')
+      closeAlert.addEventListener('click',()=>{
+        daniedCont.classList.add('hidden')
+      })
+    </script>
+
+  
+</body>
+</html>

@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+@font-face {
+    font-family: sqaure;
+    src: url(../font/Square.ttf);
+}
+
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+main{
+    margin: 10% auto 0 auto;
+    background: none;
+    max-width: 400px;
+    height: 400px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+#painel{
+    position: absolute;
+    top: -50%;
+    left: -100px;
+    width: 150%;
+    height: 100%;
+    background: linear-gradient(transparent,transparent,transparent,transparent,#62ba50);
+    animation: rotation 15s infinite linear;   
+   
+}
+#formCont{
+    position: absolute;
+    left: 1%;
+    top: 1%;
+    width: 98%;
+    height: 98%;
+    background-color: #030603;
+    border-radius: 10px;
+}
+#formCont h1{
+    margin: 10% 0 0 10%;
+    color: #62ba50;
+    letter-spacing: 5px;
+    border-bottom: 2px solid #62ba50;
+
+    width: 50%;
+}
+
+#contPut{
+   
+    width: 80%;
+    margin: 5% auto 0 auto;
+    height: 50%;
+
+
+}
+#contPut input{
+    letter-spacing: 2px;
+    margin-top: 10px;
+    padding-left: 5px;
+    background: none;
+    border: 1px solid #62ba50;
+    color: #62ba50;
+    border-radius: 3px;
+    height: 40px;
+    width: 99%;
+    outline: none;
+    transition: .2s;
+}
+#contPut input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+   
+}
+#contPut input:focus{
+    box-shadow: 0px 0px 7px #62ba5067;
+    background-color: #62ba502b;
+}
+#contPut input::placeholder{
+    color: #62ba50;
+}
+#contPut button{
+    background:none ;
+    color: #62ba50;
+    border: 1px solid #62ba50;
+    height: 40px;
+    width: 100%;
+    margin-top: 20%;
+    transition: .5s;
+}
+#contPut button:hover{
+    font-weight: 600;
+    color: #0c0c0c;
+    background-color: #62ba50;
+    box-shadow: 0px 0px 10px #62ba50a6;
+    cursor: pointer;
+}
+@keyframes rotation {
+    from{   
+        transform: rotate(0deg);
+        transform-origin: bottom;
+    
+
+    }
+    to{
+        transform: rotate(360deg);
+        transform-origin: bottom;
+    }
+}
+
+#daniedCont{
+    margin: 0 auto 0 auto;
+    max-width: 390px;
+    background-color: red;
+    position: relative;
+  
+}
+.danied{
+    overflow: hidden;
+    z-index: 1;
+    position: absolute;
+    top: 80px;
+    height: 200px;
+    border :5px solid darkred;
+    background-color: rgba(0, 0, 0, 0.855);
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 25px rgba(255, 0, 0, 0.23));
+
+}
+.daniedOpen{
+    width: 100%;
+    animation: daniedOn .7s backwards;
+}
+@keyframes daniedOn {
+    from{
+        width: 0;
+    }to{
+        width: 100%;
+    }
+}
+.danied p{
+    cursor: pointer;
+    font-size: 23px;
+    font-weight: 600;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: darkred;
+    transition: .5s;
+    padding: 2px 5px 2px 5px;
+    border-radius: 5px;
+}
+
+.danied p:hover{
+    text-shadow: 0px 0px 15px red;
+}
+.danied h1{
+    text-shadow: 0px 0px 15px rgba(255, 0, 0, 0.507);
+    color: darkred;
+    text-align: center;
+    line-height: 200px;
+    font-family: sqaure;
+    letter-spacing: 10px;
+}
+
+.hidden{
+    display: none;
+}
+

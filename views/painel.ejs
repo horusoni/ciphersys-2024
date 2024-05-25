@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CipherSys-painel</title>
+    <link rel="stylesheet" href="/css/painel.css">
+    <link rel="stylesheet" href="/css/painelmob.css">
+</head>
+<body>
+
+    <main>
+        <div id="painel" class="painelAni1 "></div>
+        <section id="modules" class="modOff ">
+            <div class="nameMod">NOME</div>
+            <div class="cpfMod">CPF</div>
+            <div class="cepMod">CEP</div>
+            <div class="placaMod">PLACA</div>
+            
+        </section>
+
+        <div id="welcome" class="wellOn ">
+            <h1>BEM VINDO AO CIPHERSYS</h1>
+        </div>
+
+        <!--input de busca-->
+        <div id="textCont" class="inputOn">
+           <input type="text" placeholder="SELECIONE UM MÓDULO" class="found" id="nome">
+        </div>
+
+        <button id="searchBtn" class="btnOn">BUSCAR</button>
+
+
+        <div id="resArea" class="resOn">
+            <div id="refUser">$REPORT ></div>
+
+            <div id="res">
+                
+
+              <!--  NOME:EXAMPLE DA SILVA <br>
+                CPF:77777777777
+                MÃE:EXAMPLE <br>
+                PAI:EXAMPLE <br>
+                CNS:8888888888888 <br>
+                CEP:555649 <br>
+                TELEFONE:666666666 <br>
+                NASCIMENTO: 02020202 <br>
+                ENDEREÇO: RUA TAL <br>
+                NOME:EXAMPLE DA SILVA <br>
+                CPF:77777777777
+                MÃE:EXAMPLE <br>
+                PAI:EXAMPLE <br>
+                CNS:8888888888888 <br>
+                CEP:555649 <br>
+                TELEFONE:666666666 <br>
+                NASCIMENTO: 02020202 <br>
+                ENDEREÇO: RUA TAL  -->
+            </div>
+        </div>
+
+      
+        
+    </main>
+
+   
+
+    <audio src="" id="audio" autoplay></audio>
+
+    <script src="../js/animaitonPainel.js"></script>
+    <script src="../js/modulos.js"></script>
+    <script src="../js/treatment.js"></script>
+    <script src="../js/fetchData.js"></script>
+
+   
+    
+</body>
+</html>
